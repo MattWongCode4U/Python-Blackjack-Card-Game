@@ -60,6 +60,14 @@ class Card:
         """
         return self.suit
 
+    #Get value and suit of the card in a string
+    def getCardInfoString(self):
+        string = ""
+        string += str(self.getValue())
+        string += "-"
+        string += str(self.suit)
+        return string
+
     #Print value and suit of the card
     def printCardInfo(self):
         """
